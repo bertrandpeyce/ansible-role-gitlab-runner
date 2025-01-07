@@ -1,4 +1,0 @@
----
-  - name: Ubuntu install
-    ansible.builtin.import_tasks: ubuntu.yml.ansible
-

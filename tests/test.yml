@@ -1,6 +1,5 @@
 ---
 - hosts: all
-  remote_user: root
   become: true
   roles:
     - role: gitlab-runner
