@@ -1,6 +1,4 @@
 ---
   - name: Ubuntu install
     ansible.builtin.import_tasks: ubuntu.yml.ansible
-    when: ansible_distribution == 'Ubuntu'
-    
 
