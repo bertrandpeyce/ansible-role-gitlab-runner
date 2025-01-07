@@ -1,0 +1,7 @@
+---
+roles:
+  - name: Ubuntu install
+    import_tasks: ubuntu.yml
+    when: ansible_distribution == 'Ubuntu'
+    
+

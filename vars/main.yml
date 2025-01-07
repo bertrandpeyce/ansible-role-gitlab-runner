@@ -1,0 +1,4 @@
+---
+# vars file for ansible-role-gitlab-runner
+ubuntu_runner_install_script_url=https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh
+ubuntu_runner_install_script_path=/tmp/gitlab-runner-script.deb.sh

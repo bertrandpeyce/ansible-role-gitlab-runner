@@ -1,0 +1,17 @@
+- name: Update apt cache
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Download Gitlab package repository install script
+  ansible.builtin.uri:
+    url: "{{ ubuntu_runner_install_script_url }}"
+    dest: "{{ ubuntu_runner_install_script_path }}"
+    mode: '0755'
+
+- name: Install Gitlab package repository using provided script
+  ansible.builtin.command: bash "{{ ubuntu_runner_install_script_path }}"
+
+- name: Install Gitlab package
+  ansible.builtin.apt: 
+    name: gitlab-runner
+    state: latest
