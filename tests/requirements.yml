@@ -1,4 +1,4 @@
 roles:
   - name: gitlab-runner
     src: git+https://github.com/bertrandpeyce/ansible-role-gitlab-runner.git
-    version: origin/main
+    version: origin/bpe_ubuntu_basic
